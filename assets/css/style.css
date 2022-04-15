@@ -1,5 +1,3 @@
-//root css with colour variables
-
 :root {
   /* CSS HEX */
   --celadon-blue: #0081a7ff;
@@ -9,26 +7,64 @@
   --bittersweet: #f07167ff;
 }
 
-*{
-    margin: 0;
-    font-family: "Taviraj", serif;
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-  }
-  
-.header-container {
-    flex-direction:row
-    background-color: var(--maximum-blue-green);
-
-
-
+* {
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+  box-sizing: border-box;
 }
 
+body {
+  background-color: var(--celadon-blue);
+  text-align: center;
+}
 
+/* Flex properties for navbar with links*/
 
+.nav-container {
+  display: flex;
+  background-color: var(--bittersweet);
+  justify-content: center;
+}
 
-  .headings h1,
-  h2 {
-    color: var(--celadon-blue);
-  }
+.nav-links-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-link-item {
+  margin: 50px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+/* Portrait image container*/
+.portrait {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.picture {
+  border-radius: 50%;
+  object-fit: contain;
+  width: 260px;
+}
+
+.headings h1,
+h2 {
+  color: var(--celadon-blue);
+}
+
+.project-card1 {
+  border: 1px solid black;
+}
+
+.image-card {
+  height: 300px;
+}
+.project1-info {
+  border: 1px solid black;
+}
