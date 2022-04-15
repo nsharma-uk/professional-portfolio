@@ -15,7 +15,7 @@
 
 body {
   background-color: var(--celadon-blue);
-  text-align: center;
+  text-align: left;
 }
 
 /* Flex properties for navbar with links*/
@@ -44,7 +44,7 @@ body {
 /* Portrait image container*/
 .portrait {
   text-align: center;
-  padding: 30px 0;
+  padding: 30px;
 }
 
 .picture {
@@ -56,14 +56,15 @@ body {
 .headings h1,
 h2 {
   color: var(--celadon-blue);
+  text-align: left;
 }
 
 .project-card1 {
   border: 1px solid black;
 }
 
-.image-card {
-  height: 300px;
+.image-card1 {
+  height: 500px;
 }
 .project1-info {
   border: 1px solid black;
