@@ -49,10 +49,10 @@ body {
 /* Portrait image container*/
 
 .portrait {
-  object-position:center;
   margin-top: 27px;
   padding: 30px, 0;
   border: black 1px solid;
+  justify-content: center;
 }
 
 .picture {
@@ -66,6 +66,8 @@ body {
   text-align: center;
   border: 1px solid black;
   border: black 1px solid;
+  padding-bottom: 30px;
+  font-weight: bolder;
 }
 
 .headings h1,
@@ -74,40 +76,41 @@ h2 {
   text-align: left;
 }
 
-
-
-.avatar {
-border: solid 1px black
-padding=30px;
-object-fit: contain;
-
+.projects-container {
+  margin: 20px;
+  padding: 30px, 0;
+  border: black 1px solid;
+  justify-content: center;
+  align-items: center;
+  border-width: 100%;
 }
 
-.avatar-image {
-  max-width: 100%;
-  max-height: 100%;
-  display: block; /* remove extra space below image */
+.project-card1 {
+  margin: auto;
+  width: calc(80% - 65px);
+  padding: 10px;
+  text-align: center;
+  border-style: 1px solid var(--light-yellow);
 }
-border: solid 1px black
-border-radius: 50%;
+
+.image-card1 {
+  width: 80%;
 }
 
 .main {
   margin-top: 2%;
-  border:2%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap:40px;
+  gap: 40px;
 }
 
 .card {
-  flex: 1 0 0;
+  width: calc(50% - 60px);
   padding: 10px;
   text-align: center;
-  border-style: solid;
-  border-width: 1px;
-  border-color: var(--light-yellow);
+  border: 1px solid var(--light-yellow);
+  background-color: var(--maximum-blue-green);
   object-fit: contain;
 }
 
@@ -115,20 +118,29 @@ border-radius: 50%;
   padding: 20px;
   color: black;
   font-size: 20px;
-}
-  
+  font-weight: bolder;
 }
 
 .card img {
-  width: 400px;
+  width: 50%;
 }
 
+/*About Me Section*/
+.about {
+  margin-top: 30px;
+  margin-left: 20px;
+}
 
+.list {
+  list-style-type: disc;
+}
 
+/*Contact Section*/
 
-
-
-
+.con {
+  margin-top: 30px;
+  margin-left: 20px;
+}
 
 /*MEDIA QUERIES */
 
