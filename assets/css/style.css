@@ -13,70 +13,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: var(--celadon-blue);
-  text-align: left;
-}
-
-.avatar {
-border: solid 1px black
-padding=30px;
-object-fit: contain;
-object-position: 0%;
-}
-
-.avatar-image {
-  max-width: 100%;
-  max-height: 100%;
-  display: block; /* remove extra space below image */
-}
-border: solid 1px black
-border-radius: 50%;
-}
-
-.main {
-  margin-top: 2%;
-  border:2%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap:40px;
-}
-
-.main-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 60px;
-  color: lightyellow;
-}
-
-.card {
-  flex: 1 0 0;
-  padding: 10px;
-  text-align: center;
-  border-style: solid;
-  border-width: 1px;
-  border-color: var(--light-yellow);
-}
-
-.card header {
-  padding: 20px;
-  color: black;
-  font-size: 15px;
-}
-  
-}
-
-.card img {
-    /* The client insists that images be at least 400px */
-  min-width: 400px;
-}
-
-
-
-
-
-
 /* Flex properties for navbar with links*/
 
 .nav-container {
@@ -105,23 +41,31 @@ a:hover {
   color: peachpuff;
 }
 
+body {
+  background-color: var(--celadon-blue);
+  text-align: left;
+}
+
 /* Portrait image container*/
 
 .portrait {
   object-position:center;
   margin-top: 27px;
   padding: 30px, 0;
+  border: black 1px solid;
 }
 
 .picture {
   border-radius: 50%;
   object-fit: contain;
   width: 260px;
+  border: black 1px solid;
 }
 
 .bio {
   text-align: center;
   border: 1px solid black;
+  border: black 1px solid;
 }
 
 .headings h1,
@@ -129,6 +73,62 @@ h2 {
   color: var(--celadon-blue);
   text-align: left;
 }
+
+
+
+.avatar {
+border: solid 1px black
+padding=30px;
+object-fit: contain;
+
+}
+
+.avatar-image {
+  max-width: 100%;
+  max-height: 100%;
+  display: block; /* remove extra space below image */
+}
+border: solid 1px black
+border-radius: 50%;
+}
+
+.main {
+  margin-top: 2%;
+  border:2%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:40px;
+}
+
+.card {
+  flex: 1 0 0;
+  padding: 10px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--light-yellow);
+  object-fit: contain;
+}
+
+.card header {
+  padding: 20px;
+  color: black;
+  font-size: 20px;
+}
+  
+}
+
+.card img {
+  width: 400px;
+}
+
+
+
+
+
+
+
 
 /*MEDIA QUERIES */
 
