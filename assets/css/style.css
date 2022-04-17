@@ -18,6 +18,65 @@ body {
   text-align: left;
 }
 
+.avatar {
+border: solid 1px black
+padding=30px;
+object-fit: contain;
+object-position: 0%;
+}
+
+.avatar-image {
+  max-width: 100%;
+  max-height: 100%;
+  display: block; /* remove extra space below image */
+}
+border: solid 1px black
+border-radius: 50%;
+}
+
+.main {
+  margin-top: 2%;
+  border:2%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:40px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+  color: lightyellow;
+}
+
+.card {
+  flex: 1 0 0;
+  padding: 10px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--light-yellow);
+}
+
+.card header {
+  padding: 20px;
+  color: black;
+  font-size: 15px;
+}
+  
+}
+
+.card img {
+    /* The client insists that images be at least 400px */
+  min-width: 400px;
+}
+
+
+
+
+
+
 /* Flex properties for navbar with links*/
 
 .nav-container {
@@ -32,19 +91,26 @@ body {
 }
 
 .nav-link-item {
-  margin: 50px;
+  margin: 30px;
 }
 
 .nav-link {
-  text-decoration: none;
   color: black;
+  font-size: larger;
   font-weight: bolder;
+  text-decoration: none;
+}
+
+a:hover {
+  color: peachpuff;
 }
 
 /* Portrait image container*/
+
 .portrait {
-  text-align: center;
-  padding: 30px;
+  object-position:center;
+  margin-top: 27px;
+  padding: 30px, 0;
 }
 
 .picture {
@@ -53,19 +119,24 @@ body {
   width: 260px;
 }
 
+.bio {
+  text-align: center;
+  border: 1px solid black;
+}
+
 .headings h1,
 h2 {
   color: var(--celadon-blue);
   text-align: left;
 }
 
-.project-card1 {
-  border: 1px solid black;
+/*MEDIA QUERIES */
+
+/*tablets*/
+@media screen and (max-width: 768px) {
 }
 
-.image-card1 {
-  height: 500px;
-}
-.project1-info {
-  border: 1px solid black;
+/*tablets*/
+
+@media screen and (max-width: 480px) {
 }
