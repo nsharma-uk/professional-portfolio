@@ -13,6 +13,21 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--celadon-blue);
+  text-align: left;
+}
+
+.headings h1,
+h2 {
+  color: var(--celadon-blue);
+  text-align: left;
+}
+
+p {
+  padding: 5px;
+}
+
 /* Flex properties for navbar with links*/
 
 .nav-container {
@@ -41,14 +56,11 @@ a:hover {
   color: peachpuff;
 }
 
-body {
-  background-color: var(--celadon-blue);
-  text-align: left;
-}
-
 /* Portrait image container*/
 
 .portrait {
+  display: flex;
+  flex-direction: row;
   margin-top: 27px;
   padding: 30px, 0;
   border: black 1px solid;
@@ -70,11 +82,7 @@ body {
   font-weight: bolder;
 }
 
-.headings h1,
-h2 {
-  color: var(--celadon-blue);
-  text-align: left;
-}
+/*First project card*/
 
 .projects-container {
   margin: 20px;
@@ -82,7 +90,9 @@ h2 {
   border: black 1px solid;
   justify-content: center;
   align-items: center;
-  border-width: 100%;
+  border-width: 80%;
+  border-radius: 25px;
+  background-color: var(--maximum-blue-green);
 }
 
 .project-card1 {
@@ -94,24 +104,29 @@ h2 {
 }
 
 .image-card1 {
-  width: 80%;
+  width: 40%;
 }
 
-.main {
-  margin-top: 2%;
+/*Rest of the project cards*/
+
+.projects {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 40px;
+  border: black 1px solid;
+  margin: auto;
+  width: 95%;
+  justify-content: center;
 }
 
 .card {
   width: calc(50% - 60px);
   padding: 10px;
   text-align: center;
-  border: 1px solid var(--light-yellow);
   background-color: var(--maximum-blue-green);
   object-fit: contain;
+  border-radius: 25px;
 }
 
 .card header {
@@ -122,11 +137,16 @@ h2 {
 }
 
 .card img {
-  width: 50%;
+  width: 210px;
+  height: 140px;
+}
+
+.italics {
+  font-style: italic;
 }
 
 /*About Me Section*/
-.about {
+.header {
   margin-top: 30px;
   margin-left: 20px;
 }
@@ -136,10 +156,24 @@ h2 {
 }
 
 /*Contact Section*/
+.social-icon {
+  margin: 12px 12px;
+  color: black;
+  transition: color 0.2s;
+  text-decoration: none;
+  font-size: 60px;
+}
 
-.con {
+.social-icon:hover {
+  color: var(--bittersweet);
+}
+
+.footer {
   margin-top: 30px;
-  margin-left: 20px;
+  background-color: var(--bittersweet);
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /*MEDIA QUERIES */
@@ -148,7 +182,7 @@ h2 {
 @media screen and (max-width: 768px) {
 }
 
-/*tablets*/
+/*phones*/
 
 @media screen and (max-width: 480px) {
 }
