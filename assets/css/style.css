@@ -182,9 +182,13 @@ margin-left: 20px;
   color: black;
   transition: color 0.2s;
   text-decoration: none;
-  font-size: 50px;}
+  font-size: 20px;}
 
-.cv, .social-icon:hover {
+.social-icon:hover {
+  color: var(--bittersweet);
+}
+
+.cv:hover {
   color: var(--bittersweet);
 }
 
