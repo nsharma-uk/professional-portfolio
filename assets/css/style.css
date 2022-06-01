@@ -20,6 +20,7 @@ body {
 
 p {
   padding: 5px;
+  color: var(--peach-puff)
 }
 header {
   width:100%;
@@ -28,7 +29,7 @@ header {
 .header {
   margin: 30px 20px;
   font-size: medium;
-  color:var(--peach-puff)
+  color:var(--maximum-blue-green)
 }
 
 /* Flex properties for navbar with links*/
@@ -46,10 +47,11 @@ header {
 
 .nav-link-item {
   margin: 30px;
+  
 }
 
 .nav-link {
-  color: black;
+  color:var(--peach-puff);
   font-size: larger;
   font-weight: bolder;
   text-decoration: none;
@@ -57,7 +59,7 @@ header {
 }
 
 a:hover {
-  color: peachpuff;
+  color:var(--celadon-blue);
   transition: color 0.2s;
 }
 
@@ -72,6 +74,7 @@ a:hover {
   }
 
 .picture {
+
   border-radius: 50%;
   object-fit: contain;
   width: 260px;
@@ -82,10 +85,17 @@ a:hover {
   padding-bottom: 30px;
   font-weight: bolder;
   font-size: 16px;
-   
-}
+  }
 
 /*First project card*/
+
+.link {
+  color: black;
+  font-size: larger;
+  font-weight: bolder;
+  text-decoration: none;
+  transition: color 0.2s;
+}
 
 .main-project {
   display: flex;
@@ -94,6 +104,7 @@ a:hover {
   width: 100%;
   justify-content: center;
   padding-bottom: 40px;
+ 
 }
 
 .first {
@@ -103,18 +114,31 @@ a:hover {
   background-color: var(--maximum-blue-green);
   object-fit: contain;
   border-radius: 25px;
-}
-
-.first header {
-  padding: 20px;
-  color: black;
-  font-size: 20px;
-  font-weight: bolder;
-}
+  }
 
 .first img {
   width: 90%;
   height: auto;
+}
+
+/*For all cards*/
+
+.card-header {
+  padding: 20px;
+  color:var(--peach-puff);
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.card-p {
+  padding: 20px;
+  color:var(--celadon-blue);
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.repo-p {
+  padding-bottom: 20px;
 }
 
 
@@ -138,12 +162,7 @@ a:hover {
   object-fit: contain;
   border-radius: 25px;
 }
-.card header {
-  padding: 20px;
-  color: black;
-  font-size: 20px;
-  font-weight: bolder;
-}
+
 .card img {
   width: 80%;
   height: auto;
@@ -155,6 +174,7 @@ a:hover {
 
 ul {
   list-style-type: disc;
+  color:var(--peach-puff);
 }
 
 .details {
@@ -166,31 +186,30 @@ margin-left: 20px;
   margin-left: 20px;
   text-align: left;
   margin-right:20px;
+  color:var(--peach-puff);
   }
 
 
 /*Contact Section*/
 .social-icon {
   margin: 16px;
-  color: black;
+  color:var(--peach-puff);
   transition: color 0.2s;
   text-decoration: none;
   font-size: 50px;
 }
 
 .cv {margin: 16px;
-  color: black;
+  color:var(--peach-puff);
   transition: color 0.2s;
   text-decoration: none;
   font-size: 20px;}
 
-.social-icon:hover {
+.social-icon:hover.cv {
   color: var(--bittersweet);
 }
 
-.cv:hover {
-  color: var(--bittersweet);
-}
+
 
 /*webpage footer*/
 .footer {
@@ -200,6 +219,7 @@ margin-left: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
   width:100%;
+  color: var(--peach-puff)
 }
 
 /*MEDIA QUERIES */
