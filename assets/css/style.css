@@ -1,0 +1,323 @@
+:root {
+  /* CSS HEX */
+  --celadon-blue: #0081a7ff;
+  --maximum-blue-green: #00afb9ff;
+  --light-yellow: #fdfcdcff;
+  --peach-puff: #fed9b7ff;
+  --bittersweet: #f07167ff;
+}
+
+* {
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--celadon-blue);
+  text-align: left;
+}
+
+p {
+  padding: 5px;
+  color: var(--peach-puff)
+}
+header {
+  width:100%;
+  
+}
+.header {
+  margin: 30px 20px;
+  font-size: medium;
+  color:var(--maximum-blue-green)
+}
+
+/* Flex properties for navbar with links*/
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--bittersweet);
+  justify-content: center;
+}
+
+.nav-links-container {
+  display: flex;
+}
+
+.nav-link-item {
+  margin: 30px;
+  
+}
+
+.nav-link {
+  color:var(--peach-puff);
+  font-size: larger;
+  font-weight: bolder;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color:var(--celadon-blue);
+  transition: color 0.2s;
+}
+
+/* Portrait image container*/
+
+.portrait {
+  display: flex;
+  flex-direction: row;
+  margin-top: 27px;
+  padding: 30px, 0;
+  justify-content: center;
+  }
+
+.picture {
+
+  border-radius: 50%;
+  object-fit: contain;
+  width: 260px;
+}
+
+.bio {
+  text-align: center;
+  padding-bottom: 30px;
+  font-weight: bolder;
+  font-size: 16px;
+  }
+
+/*First project card*/
+
+.link {
+  color: black;
+  font-size: larger;
+  font-weight: bolder;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.main-project {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 40px;
+ 
+}
+
+.first {
+  width: 95%;
+  margin: 10px 5%;
+  text-align: center;
+  background-color: var(--maximum-blue-green);
+  object-fit: contain;
+  border-radius: 25px;
+  }
+
+.first img {
+  width: 90%;
+  height: auto;
+}
+
+/*For all cards*/
+
+.card-header {
+  padding: 20px;
+  color:var(--peach-puff);
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.card-p {
+  padding: 20px;
+  color:var(--celadon-blue);
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.repo-p {
+  padding-bottom: 20px;
+}
+
+
+/*Rest of the project cards*/
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: auto;
+  width: 100%;
+  justify-content: center;
+  }
+
+.card {
+  width: calc(48% - 58px);
+  padding: 30px 10px;
+  text-align: center;
+  background-color: var(--maximum-blue-green);
+  object-fit: contain;
+  border-radius: 25px;
+}
+
+.card img {
+  width: 80%;
+  height: auto;
+}
+
+
+
+/*About Me Section*/
+
+ul {
+  list-style-type: disc;
+  color:var(--peach-puff);
+}
+
+.details {
+margin-left: 20px;
+ 
+}
+
+.summary {
+  margin-left: 20px;
+  text-align: left;
+  margin-right:20px;
+  color:var(--peach-puff);
+  }
+
+
+/*Contact Section*/
+.social-icon {
+  margin: 16px;
+  color:var(--peach-puff);
+  transition: color 0.2s;
+  text-decoration: none;
+  font-size: 50px;
+}
+
+.cv {margin: 16px;
+  color:var(--peach-puff);
+  transition: color 0.2s;
+  text-decoration: none;
+  font-size: 20px;}
+
+.social-icon:hover.cv {
+  color: var(--bittersweet);
+}
+
+
+
+/*webpage footer*/
+.footer {
+  margin-top: 30px;
+  background-color: var(--bittersweet);
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width:100%;
+  color: var(--peach-puff)
+}
+
+/*MEDIA QUERIES */
+
+/*tablets*/
+@media screen and (max-width: 768px) {
+
+  .first img {
+    width: 90%;
+    height: auto;
+     }
+ 
+
+
+/*Rest of project cards*/
+.projects {
+  gap: 10px;
+  margin-top: 0;
+  width: 100%;
+  justify-content: center;
+}
+  .card {
+    width: calc (48%  65px);
+    margin: 20px;
+  }
+  
+/*phones*/
+
+@media screen and (max-width: 480px) {
+  
+ body {
+  text-align: center;
+}
+
+p {
+  padding: none;
+  margin-top: 0;
+}
+
+.header {
+  font-size:small;
+}
+
+/*nav bar header*/
+.nav-links-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-link-item {
+    margin: 5px;
+  }
+
+/* avatar and bio*/
+
+.bio {
+  padding-bottom: 10px;
+}
+
+/*main project*/
+
+.main-project {
+  padding-bottom: 10px;
+}
+  .first {
+    width: calc(90%);
+    margin:20px 5%;
+  }
+
+  .first img {
+    width: 90%;
+    
+  }
+
+/*rest of projects*/
+
+
+ .projects {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  row-gap: 5px;
+}
+ 
+ .card {
+    width: auto;
+    margin:20px 5%;
+  }
+
+  .summary {
+    margin-right:22px;
+  }
+
+  ul{
+    padding-top: 5px;
+    text-align: left;
+}
+    
+}
