@@ -29,7 +29,7 @@ https://nsharma-uk.github.io/professional-portfolio/
 
 <br>
 
-![screenshot of deployed page](./assets/screenshots/professionalpagewebpage.png)
+![screenshot of deployed page](./assets/images/mobileportfoliowebpage.png)
 
 ## Authored by
 
